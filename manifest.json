@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "skipliked",
+  "version": "1.0",
+
+  "description": "Automatically skip liked videos on youtube.",
+
+  "background": {
+    "scripts": ["skipliked.worker.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["skipliked.content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "permissions": [
+    "webNavigation"
+  ]
+}
