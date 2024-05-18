@@ -5,6 +5,10 @@
 
   "description": "Automatically skip liked videos on youtube.",
 
+  "options_ui": {
+    "page": "skipliked.options.html"
+  },  
+
   "background": {
     "scripts": ["skipliked.worker.js"]
   },
@@ -18,6 +22,8 @@
   ],
 
   "permissions": [
-    "webNavigation"
-  ]
+    "webNavigation",
+    "storage"
+  ],
+  "applications": { "gecko": { "id": "X@Y" } }
 }
