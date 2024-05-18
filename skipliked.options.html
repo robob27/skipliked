@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="skipliked.options.css" />
+  </head>
+
+  <body style="padding: 1em;">
+    <form id="optionsForm">
+      <label for="start-delay">Start Delay</label>
+      <input id="startDelay" class="input" type="text" id="start-delay" name="start-delay" />
+      <span data-tooltip="Delay in milliseconds after navigation starts before checking for a liked video to skip.">❔</span><br />
+      <label data-tooltip="Delay in milliseconds before skipping a liked video" for="skip-delay">Skip Delay</label>
+      <input id="skipDelay" class="input" type="text" id="skip-delay" name="skip-delay" />
+      <span data-tooltip="Delay in milliseconds before skipping a liked video. During this time a button will be shown in the top left that allows you to cancel skipping the video.">❔</span><br />
+      <button type="submit">Save</button>
+    </form>
+    <div id="status"></div>
+    <script src="skipliked.options.js"></script>
+  </body>
+</html>
